@@ -9,7 +9,8 @@ def get_users_v2():
     return {
         "users": [
             {"id": 1, "name": "Alice"},
-            {"id": 2, "name": "Bob"}
+            {"id": 2, "name": "Bob"},
+            {"id": 3, "name": "lol"}
         ]
     }
 
@@ -23,7 +24,7 @@ def get_users():
 
     # Old response format
     return {
-        "data": ["Alice", "Bob"]
+        "data": ["Alice", "Bob","lol"]
     }
 
 
@@ -34,3 +35,6 @@ if __name__ == "__main__":
 
     print("\nCalling NEW function:")
     print(get_users_v2())
+
+    print("\nCalling NEW function:")
+    print(get_users_v3())
