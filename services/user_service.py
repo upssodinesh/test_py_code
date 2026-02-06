@@ -9,6 +9,16 @@ def get_users_v2():
     return {
         "users": [
             {"id": 1, "name": "Alice"},
+            {"id": 2, "name": "Bob"}
+        ]
+    }
+
+
+# --- New function (recommended) ---
+def get_users_v3():
+    return {
+        "users": [
+            {"id": 1, "name": "Alice"},
             {"id": 2, "name": "Bob"},
             {"id": 3, "name": "lol"}
         ]
