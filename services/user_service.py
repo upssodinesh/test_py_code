@@ -14,6 +14,17 @@ def get_users_v2():
     }
 
 
+# --- New function (recommended) ---
+def get_users_v3():
+    return {
+        "users": [
+            {"id": 1, "name": "Alice"},
+            {"id": 2, "name": "Bob"},
+            {"id": 3, "name": "lol"}
+        ]
+    }
+
+
 # --- Old function (to be removed in 2.0.0) ---
 def get_users():
     logger.warning(
@@ -23,7 +34,7 @@ def get_users():
 
     # Old response format
     return {
-        "data": ["Alice", "Bob"]
+        "data": ["Alice", "Bob","lol"]
     }
 
 
@@ -34,3 +45,6 @@ if __name__ == "__main__":
 
     print("\nCalling NEW function:")
     print(get_users_v2())
+
+    print("\nCalling NEW function:")
+    print(get_users_v3())
